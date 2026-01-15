@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+<Product
+  Id="*"
+  Name="Network Observability Agent"
+  Manufacturer="Enterprise IT"
+  Version="1.0.0"
+  UpgradeCode="{PUT-GUID-HERE}">
+
+  <Package InstallerVersion="500" InstallScope="perMachine" />
+
+  <MediaTemplate />
+
+  <Directory Id="TARGETDIR" Name="SourceDir">
+    <Directory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLDIR" Name="NetworkObservabilityAgent"/>
+    </Directory>
+  </Directory>
+
+  <Feature Id="MainFeature" Title="Agent" Level="1">
+    <Component Id="AgentComponent" Guid="*">
+      <File Source="payload\agent.exe"/>
+    </Component>
+  </Feature>
+
+</Product>
+</Wix>

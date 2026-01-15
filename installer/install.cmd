@@ -1,0 +1,1 @@
+msiexec /i NetworkAgent.msi /qn

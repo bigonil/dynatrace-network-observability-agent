@@ -1,0 +1,15 @@
+{
+  "schemaId": "custom.network.observability.activation",
+  "displayName": "Network Observability Configuration",
+  "properties": {
+    "targets": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["8.8.8.8", "1.1.1.1"]
+    },
+    "interval": {
+      "type": "integer",
+      "default": 60
+    }
+  }
+}
