@@ -3,3 +3,5 @@
 *.pfx
 *.log
 /build/output/
+/venv/*
+/__pycache__/
