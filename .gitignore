@@ -1,0 +1,5 @@
+*.msi
+*.wixobj
+*.pfx
+*.log
+/build/output/
