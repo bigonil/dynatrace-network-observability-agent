@@ -1,0 +1,17 @@
+name: custom.network.observability
+version: 1.0.0
+minDynatraceVersion: "1.275"
+author:
+  name: Enterprise Observability Team
+python:
+  runtime:
+    module: network_probe
+metrics:
+  - key: custom.network.icmp.latency
+    unit: MilliSecond
+  - key: custom.network.tcp.connect_time
+    unit: MilliSecond
+  - key: custom.network.jitter
+    unit: MilliSecond
+  - key: custom.network.packet_loss
+    unit: Percent
